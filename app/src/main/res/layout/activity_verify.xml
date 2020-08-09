@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Verify"
+    android:orientation="vertical">
+
+    <include layout="@layout/mainbar_verify"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/ic_verified_user_black_24dp"
+            android:id="@+id/verify_logo"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/verify_logo"
+            android:text="OTP has to be accessed from the customer. \nPlease enter it below"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:id="@+id/text"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="Code"
+            android:layout_below="@id/text"
+            android:id="@+id/codeText"
+            android:textAlignment="center"
+            android:padding="20dp"
+            android:textColor="@color/colorBlack"/>
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/codeText"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:text="Verify"
+            android:textColor="@color/colorPrimary"
+            android:textAllCaps="false"/>
+    </RelativeLayout>
+
+</LinearLayout>
