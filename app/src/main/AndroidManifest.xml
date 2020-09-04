@@ -1,39 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.deliveryapp">
-
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CAMERA" />
-
-    <uses-feature android:name="android.hardware.camera" />
-    <uses-feature android:name="android.hardware.camera.autofocus" />
+    package="com.pragathiOrganic.deliveryapp">
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:networkSecurityConfig="@xml/network_security_config"
         android:theme="@style/AppTheme">
-        <activity android:name=".NewPassword"></activity>
-        <activity android:name=".ForgotPassword" />
-        <activity android:name=".CaptureImage" />
-        <activity android:name=".DigitalSignature" />
-        <activity android:name=".Verify" />
-        <activity android:name=".OrderDetails" />
-        <activity android:name=".Profile" />
-        <activity android:name=".Register" />
-        <activity android:name=".Splash" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Login">
+        <activity android:name="com.pragathiOrganic.deliveryapp.PrivacyPolicy"></activity>
+        <activity android:name="com.pragathiOrganic.deliveryapp.HelpActivity" />
+        <activity android:name="com.pragathiOrganic.deliveryapp.CompletedOrders" />
+        <activity android:name="com.pragathiOrganic.deliveryapp.ProcessingOrders" />
+        <activity android:name="com.pragathiOrganic.deliveryapp.PendingOrders" />
+        <activity android:name="com.pragathiOrganic.deliveryapp.ForgotPassword" />
+        <activity android:name="com.pragathiOrganic.deliveryapp.CaptureImage" />
+        <activity android:name="com.pragathiOrganic.deliveryapp.DigitalSignature" />
+        <activity android:name="com.pragathiOrganic.deliveryapp.Verify" />
+        <activity android:name="com.pragathiOrganic.deliveryapp.OrderDetails" />
+        <activity android:name="com.pragathiOrganic.deliveryapp.Profile" />
+        <activity android:name="com.pragathiOrganic.deliveryapp.Splash" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.pragathiOrganic.deliveryapp.MainActivity" />
+        <activity android:name="com.pragathiOrganic.deliveryapp.Login">
+
+        </activity>
     </application>
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.INJECT_EVENTS"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
 </manifest>

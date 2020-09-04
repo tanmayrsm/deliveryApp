@@ -33,6 +33,7 @@
             android:textColor="@color/colorPrimary"
             android:layout_alignParentBottom="true"
             android:text="I agree to terms and conditions"
+            android:visibility="gone"
             />
 
         <com.github.gcacace.signaturepad.views.SignaturePad

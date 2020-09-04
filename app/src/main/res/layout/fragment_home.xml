@@ -7,137 +7,143 @@
     android:background="@color/colorWhite"
     >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/abc"
-        android:orientation="horizontal">
-        <include layout="@layout/mainbar"/>
-    </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/abc"
+      android:orientation="horizontal">
+    <include layout="@layout/mainbar"/>
+  </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="0dp"
-            android:layout_height="130dp"
-            android:layout_weight="1"
-            android:textSize="13sp"
-            android:textAllCaps="false"
-            android:textColor="@color/colorWhite"
-            android:text="1\nLifetime \norders "
-            android:background="@drawable/button3"
-            android:layout_margin="5dp"/>
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="0dp"
-            android:layout_height="130dp"
-            android:layout_weight="1"
-            android:textSize="13sp"
-            android:textColor="@color/colorWhite"
-            android:textAllCaps="false"
-            android:background="@drawable/button2"
-            android:text="1\nAverage daily \norders"
-            android:layout_margin="5dp"/>
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="0dp"
-            android:layout_height="130dp"
-            android:textSize="13sp"
-            android:textColor="@color/colorWhite"
-            android:textAllCaps="false"
-            android:layout_weight="1"
-            android:background="@drawable/button3"
-            android:text="1\nMonthly \norders"
-            android:layout_margin="5dp"/>
-    </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="130dp"
-            android:layout_weight="1"
-            android:textSize="13sp"
-            android:textColor="@color/colorWhite"
-            android:textAllCaps="false"
-            android:text="\Pending \norders "
-            android:background="@drawable/button2"
-            android:layout_margin="5dp"/>
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="130dp"
-            android:layout_weight="1"
-            android:textSize="13sp"
-            android:textColor="@color/colorWhite"
-            android:textAllCaps="false"
-            android:background="@drawable/button3"
-            android:text="Processing \norders"
-            android:layout_margin="5dp"/>
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="130dp"
-            android:textSize="13sp"
-            android:textColor="@color/colorWhite"
-            android:textAllCaps="false"
-            android:layout_weight="1"
-            android:background="@drawable/button2"
-            android:text="Completed \norders"
-            android:layout_margin="5dp"/>
-    </LinearLayout>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/button3"
+        android:text="◌"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="13sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="130dp"
-            android:layout_weight="1"
-            android:textSize="13sp"
-            android:textAllCaps="false"
-            android:text="Chat Now "
-            android:textColor="@color/colorWhite"
-            android:background="@drawable/button2"
-            android:layout_margin="5dp"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_weight="1"
+        android:textSize="13sp"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:background="@drawable/button2"
+        android:text="◌"
+        android:layout_margin="5dp"/>
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:textSize="13sp"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        android:background="@drawable/button3"
+        android:text="◌"
+        android:layout_margin="5dp"/>
+  </LinearLayout>
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="130dp"
-            android:textSize="13sp"
-            android:textAllCaps="false"
-            android:layout_weight="1"
-            android:textColor="@color/colorWhite"
-            android:background="@drawable/button3"
-            android:text="Privacy policy"
-            android:layout_margin="5dp"/>
-    </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="20dp">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_weight="1"
+        android:textSize="13sp"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:text="\Pending \norders "
+        android:background="@drawable/button2"
+        android:layout_margin="5dp"
+        android:id="@+id/pending"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_weight="1"
+        android:textSize="13sp"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:background="@drawable/button3"
+        android:text="Processing \norders"
+        android:layout_margin="5dp"
+        android:id="@+id/process"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:textSize="13sp"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        android:background="@drawable/button2"
+        android:text="Completed \norders"
+        android:layout_margin="5dp"
+        android:id="@+id/completed"/>
+  </LinearLayout>
 
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:orientation="horizontal"
-       android:layout_marginTop="10dp">
-       <Button
-           android:layout_width="0dp"
-           android:layout_height="130dp"
-           android:layout_weight="1"
-           android:textSize="13sp"
-           android:textAllCaps="false"
-           android:text="Help Center"
-           android:background="@drawable/button2"
-           android:layout_margin="5dp"
-           android:textColor="@color/colorWhite"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="20dp">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_weight="1"
+        android:textSize="13sp"
+        android:textAllCaps="false"
+        android:text="Chat Now "
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/button2"
+        android:layout_margin="5dp"
+        android:id="@+id/open_whatsapp"/>
 
-   </LinearLayout>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:textSize="13sp"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/button3"
+        android:text="Privacy policy"
+        android:layout_margin="5dp"
+        android:id="@+id/pp"/>
+  </LinearLayout>
 
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="10dp">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_weight="1"
+        android:textSize="13sp"
+        android:textAllCaps="false"
+        android:text="Help Center"
+        android:background="@drawable/button2"
+        android:layout_margin="5dp"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/help"/>
 
+  </LinearLayout>
 
 </LinearLayout>

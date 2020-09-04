@@ -7,73 +7,76 @@
     tools:context=".Login"
     android:padding="20dp">
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/logo"
-        android:src="@drawable/logo"
-        android:layout_centerHorizontal="true"
-        />
+  <ImageView
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:id="@+id/logo"
+      android:src="@drawable/logo"
+      android:layout_centerHorizontal="true"
+      />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome back !!"
-        android:layout_marginTop="5dp"
-        android:layout_below="@+id/logo"
-        android:textStyle="bold"
-        android:textSize="30dp"
-        android:id="@+id/reg_txt"
-        android:textColor="@color/colorPrimary"
-        android:layout_centerHorizontal="true"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/reg_txt"
-        android:id="@+id/phone_no"
-        android:hint="Phone No"
-        android:padding="20dp"
-        android:background="@drawable/edittext"
-        android:layout_marginTop="10dp"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/phone_no"
-        android:id="@+id/password"
-        android:hint="Password"
-        android:background="@drawable/edittext"
-        android:padding="20dp"
-        android:layout_marginTop="10dp"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Welcome back !!"
+      android:layout_marginTop="5dp"
+      android:layout_below="@+id/logo"
+      android:textStyle="bold"
+      android:textSize="30dp"
+      android:id="@+id/reg_txt"
+      android:textColor="@color/colorPrimary"
+      android:layout_centerHorizontal="true"/>
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/reg_txt"
+      android:id="@+id/phone_no"
+      android:hint="Phone No"
+      android:inputType="number"
+      android:padding="20dp"
+      android:background="@drawable/edittext"
+      android:layout_marginTop="10dp"/>
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/phone_no"
+      android:id="@+id/password"
+      android:hint="Password"
+      android:inputType="textPassword"
+      android:background="@drawable/edittext"
+      android:padding="20dp"
+      android:layout_marginTop="10dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/forgot_password"
-        android:layout_below="@+id/password"
-        android:text="Forgot password ?"
-        android:layout_alignParentRight="true"
-        android:padding="10dp"
-        android:textColor="@color/colorPrimary"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/forgot_password"
+      android:layout_below="@+id/password"
+      android:text="Forgot password ?"
+      android:layout_alignParentRight="true"
+      android:padding="10dp"
+      android:textColor="@color/colorPrimary"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/forgot_password"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/submit"
-        android:layout_marginTop="20dp"
-        android:text="Login"
-        android:textAllCaps="false"
-        android:background="@drawable/button"
-        android:textColor="#FFFFFF"/>
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/forgot_password"
+      android:layout_centerHorizontal="true"
+      android:id="@+id/submit"
+      android:layout_marginTop="20dp"
+      android:text="Login"
+      android:textAllCaps="false"
+      android:background="@drawable/button"
+      android:textColor="#FFFFFF"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New here ? Register"
-        android:id="@+id/reg"
-        android:layout_below="@id/submit"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/colorPrimary"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="New here ? Register"
+      android:id="@+id/reg"
+      android:layout_below="@id/submit"
+      android:layout_marginTop="10dp"
+      android:textColor="@color/colorPrimary"
+      android:visibility="gone"/>
 
 </RelativeLayout>

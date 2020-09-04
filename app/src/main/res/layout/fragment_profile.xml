@@ -21,7 +21,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="20dp"
             app:cardCornerRadius="5dp"
             android:elevation="10dp"
             android:id="@+id/card"
@@ -31,11 +31,39 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="20dp">
-                <ImageView
-                    android:layout_width="55dp"
-                    android:layout_height="55dp"
+                <RelativeLayout
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rela">
 
-                    android:src="@drawable/ic_account_circle_black_24dp"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:elevation="12dp"
+                        android:id="@+id/view2"
+                        app:cardCornerRadius="40dp"
+                        android:layout_centerHorizontal="true">
+                        <ImageView
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/ic_account_circle_black_24dp"
+                            android:id="@+id/prof_pic"
+                            android:scaleType="centerCrop"
+                            />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_edit_black_24dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/picc"
+                        android:layout_marginLeft="60dp"
+                        />
+                </RelativeLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -49,25 +77,29 @@
                         android:textStyle="bold"
                         android:textColor="@color/colorBlack"
                         android:textSize="15sp"
+                        android:id="@+id/Namee"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="9999999999"
+                        android:id="@+id/Phonee"
                         />
                 </LinearLayout>
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_below="@id/card"
-            android:id="@+id/l2">
+            android:id="@+id/l2"
+            android:layout_centerInParent="true"
+            android:padding="3dp">
             <Button
-                android:layout_width="150dp"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="Edit Profile"
                 android:textAllCaps="false"
@@ -76,23 +108,27 @@
                 android:textColor="@color/colorWhite"
                 android:id="@+id/Edit"/>
             <Button
-                android:layout_width="150dp"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="Logout"
                 android:id="@+id/Logout"
                 android:textAllCaps="false"
                 android:background="@drawable/button2"
                 android:layout_margin="10dp"
-                android:textColor="@color/colorWhite"/>
-        </LinearLayout>
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l2">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_below="@+id/l2"
-            android:layout_marginTop="20dp"
-            android:visibility="visible"
+            android:visibility="gone"
             android:id="@+id/l1">
             <TextView
                 android:layout_width="match_parent"
@@ -102,6 +138,7 @@
                 android:textSize="20sp"
                 android:textColor="@color/colorBlack"
                 android:textAlignment="center"/>
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -110,7 +147,10 @@
                 android:hint="Name"
                 android:padding="15dp"
                 android:background="@drawable/edittext"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                android:textAlignment="center"/>
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -119,7 +159,9 @@
                 android:hint="Phone no"
                 android:background="@drawable/edittext"
                 android:padding="15dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+                android:textAlignment="center"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -127,16 +169,20 @@
                 android:hint="Vehicle No"
                 android:background="@drawable/edittext"
                 android:padding="15dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:drawableLeft="@drawable/ic_baseline_directions_car_24"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:id="@+id/address"
                 android:hint="Address"
                 android:background="@drawable/edittext"
                 android:padding="15dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                android:textAlignment="center"/>
+
 
             <Button
                 android:layout_width="match_parent"
@@ -149,7 +195,9 @@
                 android:textAllCaps="false"
                 android:background="@drawable/button"
                 android:textColor="#FFFFFF"/>
+
         </LinearLayout>
+        </ScrollView>
 
     </RelativeLayout>
 

@@ -6,10 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".Splash">
 
-    <ImageView
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Pragathi Marketing Delivery"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_above="@+id/l1"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"
+        />
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:src="@drawable/logo"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:id="@+id/l1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Developed by D Tech, Bengaluru"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        />
 
 </RelativeLayout>
